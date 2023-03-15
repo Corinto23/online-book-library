@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border:  1px solid gold;
+  width: auto;
+  height: 800px;
+  background-color: rgb(233, 233, 233);
+}
+
+h1 {
+  text-align: center;
+  color: goldenrod;
+  background-color: black;
+}
+
+.total {
+  padding: 10px;
+  border: 3px solid black;
+  width: 600px;
+  height: auto;
+  margin-top:  50px;
+}
+
+.total ol {
+  margin: 10px;
+}
+
+.total p {
+  margin: 10px;
+text-align: right;
+text-decoration: underline;
+}
+
+.user-info {
+  border: 3px solid black;
+  height: auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.user-info label {
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px;
+}
+
+.user-info input {
+  float:left;
+}
+
+.user-info label {
+  float:left;
+}
+
+.payment-method {
+  border: 3px solid black;
+  padding: 10px;
+  width: 600px;
+  height: auto;
+  display: flex;
+}
+
+.radio  {
+  margin: 0 0 0 10px;
+  }
+
+  .button {
+    border: 3px solid black ;
+    border-radius: 1px;
+    padding: 10px;
+    width: 600px;
+    text-align: center;
+  }
+  
+.button :hover{
+  border: 1px solid gold;
+  background-color: gold;
+}
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.payment-option span {
+  margin-right: 10px;
+}
+
+.payment-option img {
+  height: 30px;
+  width: auto;
+}
+
+@media (max-width:768px)
+{ body {
+  width: auto;
+}
+  header {
+    width: 654px;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 654px;
+  }
+  .total{
+    display: flex;
+  }
+}
+
+
+@media (max-width:425px)
+{ body {
+  width: auto;
+}
+  header {
+    width: 520px;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 520px;
+  }
+  .total{
+    display: flex;
+  }
+}
+
+
+
+
